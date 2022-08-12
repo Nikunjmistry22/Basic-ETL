@@ -1,7 +1,7 @@
 import psycopg2
 
 
-conn = psycopg2.connect("host=localhost dbname=sparkifydb user=postgres password=nikunj22")
+conn = psycopg2.connect("host=localhost dbname=sparkifydb user=postgres password=password")
 cur = conn.cursor()
 
 def song_detail():

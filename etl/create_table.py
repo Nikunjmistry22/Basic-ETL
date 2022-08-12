@@ -3,7 +3,7 @@ from sql_queries import create_table_queries,drop_table_queries
 
 def create_database():
     try:
-        conn=psycopg2.connect(host="localhost",dbname="postgres",user="postgres",password="nikunj22")
+        conn=psycopg2.connect(host="localhost",dbname="postgres",user="postgres",password="password")
     except psycopg2.Error as e:
         print("Error: Could not connect the postgresql database")
         print(e)
@@ -33,7 +33,7 @@ def create_database():
 
     # connect to sparkify database
     try:
-        conn = psycopg2.connect("host=localhost dbname=sparkifydb user=postgres password=nikunj22")
+        conn = psycopg2.connect("host=localhost dbname=sparkifydb user=postgres password=password")
     except psycopg2.Error as e:
         print("Error: Could not make connection to the Postgres database")
         print(e)

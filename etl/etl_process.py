@@ -4,7 +4,7 @@ import psycopg2
 import pandas as pd
 from sql_queries import *
 
-conn = psycopg2.connect("host=localhost dbname=sparkifydb user=postgres password=nikunj22")
+conn = psycopg2.connect("host=localhost dbname=sparkifydb user=postgres password=password")
 cur = conn.cursor()
 
 
